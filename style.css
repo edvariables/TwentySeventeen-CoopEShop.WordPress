@@ -1,0 +1,67 @@
+/*
+Theme Name: Twenty Seventeen thème dérivé pour CoopEShop
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: ED
+Author URI: https://wp.coopeshop.net
+Description: Twenty Seventeen thème dérivé pour CoopEShop
+Version: 1.0.3
+Requires at least: 4.7
+Requires PHP: 5.2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen-coopeshop
+Template:     twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* show modified date instead of creation date */
+.archive-fournisseurs + #primary .byline, .archive-fournisseurs + #primary .updated:not(.published),
+.taxonomy-type_fournisseur + #primary .byline, .taxonomy-type_fournisseur + #primary .updated:not(.published),
+article.fournisseur .updated{
+	display: inline;
+}
+.archive-fournisseurs + #primary .entry-date.published,
+.taxonomy-type_fournisseur + #primary .entry-date.published,
+article.fournisseur .entry-date.published   {
+	display: none;
+}
+
+header.entry-header cite.entry-terms {
+	font-size: smaller;
+	position: relative;
+	top: -1em;
+}
+
+.taxonomy-type_fournisseur .children-terms {
+	font-style: italic;
+	font-size: smaller;
+}
+.taxonomy-type_fournisseur .parent-term,
+.taxonomy-type_fournisseur .children-terms, 
+.taxonomy-type_fournisseur .children-terms ul {
+	list-style: none;
+}
+
+.archive-fournisseurs .search-form input[type="search"] {
+	/*width: 12em;*/
+	/*display: inline;*/
+	padding: 0.5em;
+	margin-bottom: 1em;
+	margin-right: 0.5em;
+	font-size: smaller;
+}
+.archive-fournisseurs .search-form .search-submit {
+    padding: 0.25em 0.5em;
+
+}
+
+header.taxonomy-type_fournisseur .page-title {
+	margin-bottom: 0px;
+}
+header.taxonomy-type_fournisseur .goto-parent {
+	position: relative;
+	left: -6px;
+}
