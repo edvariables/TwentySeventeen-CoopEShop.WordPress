@@ -40,7 +40,7 @@
 			the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 			if ( 'fournisseur' === get_post_type() ) {
 				the_terms( get_the_ID(), 'type_fournisseur', 
-					sprintf( '<cite class="entry-terms">', esc_url( get_permalink() ) ), ', ', '</cite>' );
+					sprintf( '<cite class="entry-terms">' ), ', ', '</cite>' );
 			}
 
 		}
